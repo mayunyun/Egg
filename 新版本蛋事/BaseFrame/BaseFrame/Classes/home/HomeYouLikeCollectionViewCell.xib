@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeYouLikeCollectionViewCellID" id="EX5-gw-gaB" customClass="HomeYouLikeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddU-mo-twZ">
+                        <rect key="frame" x="20" y="8" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="Dx2-Vz-pTc"/>
+                            <constraint firstAttribute="width" constant="120" id="hH0-Ow-bgL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUH-KG-sBe">
+                        <rect key="frame" x="20" y="135" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="TlR-0E-EJ6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.43556660349999998" green="0.43556660349999998" blue="0.43556660349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTO-pN-5Je">
+                        <rect key="frame" x="122" y="154" width="30" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="EjW-b9-uak"/>
+                            <constraint firstAttribute="height" constant="22" id="un1-dz-cBG"/>
+                        </constraints>
+                        <state key="normal" image="homeShopCar"/>
+                        <connections>
+                            <action selector="shopCarBtnClick:" destination="EX5-gw-gaB" eventType="touchUpInside" id="xhu-hd-C4O"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypJ-pR-1th">
+                        <rect key="frame" x="20" y="159" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="LdW-aB-Dcf"/>
+                            <constraint firstAttribute="height" constant="21" id="exY-k0-YGO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.16493927859999999" blue="0.25487174810000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SUH-KG-sBe" firstAttribute="leading" secondItem="ddU-mo-twZ" secondAttribute="leading" id="1tB-Og-TE0"/>
+                <constraint firstItem="ddU-mo-twZ" firstAttribute="centerY" secondItem="EX5-gw-gaB" secondAttribute="centerY" constant="-22" id="2s0-ZI-pHq"/>
+                <constraint firstItem="ddU-mo-twZ" firstAttribute="centerX" secondItem="EX5-gw-gaB" secondAttribute="centerX" id="9e9-w0-Hjd"/>
+                <constraint firstItem="SUH-KG-sBe" firstAttribute="width" secondItem="ddU-mo-twZ" secondAttribute="width" id="CEL-60-2N0"/>
+                <constraint firstAttribute="trailing" secondItem="VTO-pN-5Je" secondAttribute="trailing" constant="8" id="PSd-6A-IXR"/>
+                <constraint firstAttribute="bottom" secondItem="VTO-pN-5Je" secondAttribute="bottom" constant="4" id="glT-rS-p6Q"/>
+                <constraint firstItem="ypJ-pR-1th" firstAttribute="top" secondItem="SUH-KG-sBe" secondAttribute="bottom" constant="3" id="k6V-W2-L87"/>
+                <constraint firstItem="ypJ-pR-1th" firstAttribute="leading" secondItem="ddU-mo-twZ" secondAttribute="leading" id="kXV-rT-Whx"/>
+                <constraint firstItem="SUH-KG-sBe" firstAttribute="top" secondItem="ddU-mo-twZ" secondAttribute="bottom" constant="7" id="tFg-Cc-4qH"/>
+            </constraints>
+            <connections>
+                <outlet property="imgView" destination="ddU-mo-twZ" id="5Nm-Fr-vAH"/>
+                <outlet property="priceLabel" destination="ypJ-pR-1th" id="FkW-0C-ufr"/>
+                <outlet property="shopCarBtn" destination="VTO-pN-5Je" id="2hw-2Q-t3j"/>
+                <outlet property="titleLabel" destination="SUH-KG-sBe" id="JwN-KL-tZM"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homeShopCar" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MYYTypeDetailsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gEv-xf-W9O">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="C3n-dZ-Pvn"/>
+                            <constraint firstAttribute="height" constant="80" id="p77-fv-0Zu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKx-Xs-x54">
+                        <rect key="frame" x="98" y="16" width="269" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ZSp-H9-Ha0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOZ-dL-Qbt">
+                        <rect key="frame" x="98" y="45" width="191" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1Be-pc-dTK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-ab-fkc">
+                        <rect key="frame" x="329" y="53" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="6f4-PM-0yb"/>
+                            <constraint firstAttribute="width" constant="38" id="SCu-ZE-V74"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="homeShopCar"/>
+                        <connections>
+                            <action selector="shopCarBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kj8-rE-lxm"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hKx-Xs-x54" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="1Pz-cO-uPW"/>
+                    <constraint firstItem="gEv-xf-W9O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="70M-Q0-n6h"/>
+                    <constraint firstItem="gEv-xf-W9O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="DHz-WF-3an"/>
+                    <constraint firstItem="gT5-ab-fkc" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="KxN-JN-hoV"/>
+                    <constraint firstItem="KOZ-dL-Qbt" firstAttribute="leading" secondItem="gEv-xf-W9O" secondAttribute="trailing" constant="8" id="SYU-xz-f8b"/>
+                    <constraint firstItem="KOZ-dL-Qbt" firstAttribute="top" secondItem="hKx-Xs-x54" secondAttribute="bottom" constant="8" id="SvL-Fn-SC1"/>
+                    <constraint firstItem="gT5-ab-fkc" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="cB5-H0-4W3"/>
+                    <constraint firstItem="hKx-Xs-x54" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="fmV-BR-5Vk"/>
+                    <constraint firstItem="hKx-Xs-x54" firstAttribute="leading" secondItem="gEv-xf-W9O" secondAttribute="trailing" constant="8" id="fvW-KP-yKu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gEv-xf-W9O" secondAttribute="bottom" constant="1" id="jiJ-5Z-udg"/>
+                    <constraint firstItem="gT5-ab-fkc" firstAttribute="leading" secondItem="KOZ-dL-Qbt" secondAttribute="trailing" constant="40" id="l1R-RR-i3O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="gEv-xf-W9O" id="bhK-WT-lmx"/>
+                <outlet property="priceLabel" destination="KOZ-dL-Qbt" id="ZlJ-gW-6VD"/>
+                <outlet property="shopCarBtn" destination="gT5-ab-fkc" id="r9I-Ik-GoS"/>
+                <outlet property="titleLabel" destination="hKx-Xs-x54" id="TPv-Dg-Nnc"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homeShopCar" width="22" height="22"/>
+    </resources>
+</document>
